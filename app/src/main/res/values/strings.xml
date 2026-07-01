@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">HelpBuddy!</string>
+    <string name="help_buddy">Help Buddy!</string>
+    <string name="welcome_nto_nhelp_buddy">Welcome\nTo\nHelp Buddy !</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="login_act">Login</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="name">Name</string>
+    <string name="branch">Branch</string>
+    <string name="nsut_email">NSUT Email</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="nsut_email_">NSUT Email</string>
+    <string name="send_verification_email">Send Verification Email</string>
+    <string name="check_verification">Check Verification</string>
+    <string name="email_not_verified">Email Not Verified</string>
+    <string name="open">Open Drawer</string>
+    <string name="close">Close Drawer</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="name_">Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="email_cannot_be_changed">Email cannot be changed.</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="ice">Ice</string>
+    <string name="aman_gmail_com">aman@gmail.com</string>
+    <string name="_74xxxxxxxx">74xxxxxxxx</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="recent_needs">Recent Needs</string>
+
+</resources>
