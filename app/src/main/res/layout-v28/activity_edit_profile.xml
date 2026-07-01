@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"/>
+
+            <!-- Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:layout_gravity="left"
+                android:layout_marginTop="15dp"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/nameEt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_box_selector"
+                android:hint="Name"
+                android:inputType="textCapWords|textPersonName"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"/>
+
+            <!-- Branch -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Branch"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:layout_gravity="left"
+                android:layout_marginTop="15dp"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/branchEt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_box_selector"
+                android:hint="Branch"
+                android:inputType="textCapWords"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"/>
+
+            <!-- Mobile -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:layout_gravity="left"
+                android:layout_marginTop="15dp"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/mobileEt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_box_selector"
+                android:hint="Mobile Number"
+                android:inputType="phone"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"/>
+
+            <!-- Email -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:layout_gravity="left"
+                android:layout_marginTop="15dp"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_box_selector"
+                android:hint="Email"
+                android:focusable="false"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:inputType="none"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"/>
+
+            <TextView
+                android:id="@+id/emailInfoTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Email cannot be changed."
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="12sp"
+                android:visibility="gone"/>
+
+            <!-- Update Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/updateBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/white_stroke"
+                android:text="Update Profile"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:outlineSpotShadowColor="@color/blue"
+        android:visibility="gone"/>
+
+</FrameLayout>
+

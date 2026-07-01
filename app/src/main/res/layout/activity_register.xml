@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:isScrollContainer="true">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        tools:context=".log_reg.RegisterActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/register"
+            android:textColor="@color/blue"
+            android:textSize="45sp"
+            tools:ignore="TextContrastCheck" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/name_reg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/edit_text_box_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:inputType="textCapWords|textPersonName"
+            android:foreground="@drawable/ripple_grey"
+            android:hint="@string/name"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            tools:ignore="RtlSymmetry,TextContrastCheck,VisualLintTextFieldSize" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/branch_reg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/edit_text_box_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_grey"
+            android:hint="@string/branch"
+            android:inputType="textCapWords|textPersonName"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            tools:ignore="RtlSymmetry,TextContrastCheck,VisualLintTextFieldSize" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/mobile_reg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/edit_text_box_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_grey"
+            android:hint="@string/mobile_no"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            tools:ignore="RtlSymmetry,TextContrastCheck,VisualLintTextFieldSize" />
+
+
+        <!-- Email -->
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/email_reg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/edit_text_box_selector"
+            android:hint="@string/nsut_email_"
+            android:inputType="textEmailAddress"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            tools:ignore="RtlSymmetry,TextContrastCheck,VisualLintTextFieldSize" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/password_reg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/edit_text_box_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_grey"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            tools:ignore="RtlSymmetry,TextContrastCheck,VisualLintTextFieldSize" />
+
+        <!-- Send Verification Email -->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sendVerificationBtn"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:background="@drawable/white_stroke"
+            android:text="@string/send_verification_email"
+            android:textColor="@android:color/white"
+            tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/link_sent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/gluten_extra_light"
+            android:text="Link has been sent"
+            android:visibility="gone"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold"/>
+
+        <!-- Check Verification -->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/checkVerificationBtn"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/white_stroke"
+            android:text="@string/check_verification"
+            android:textColor="@android:color/white"
+            tools:ignore="TextContrastCheck" />
+
+        <!-- Status -->
+
+        <TextView
+            android:id="@+id/verificationStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gluten_extra_light"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/email_not_verified"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registerBtn"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/white_stroke"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_grey"
+            android:text="@string/register"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            tools:ignore="TextContrastCheck" />
+
+    </LinearLayout>
+
+</ScrollView>

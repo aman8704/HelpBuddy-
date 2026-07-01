@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "547601305890",
+    "project_id": "help-buddy-e674c",
+    "storage_bucket": "help-buddy-e674c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547601305890:android:b51a260d19b813fa7a957b",
+        "android_client_info": {
+          "package_name": "com.example.help"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiWKIMxlepS9DR2do070UhgWoVZ5UfAnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
